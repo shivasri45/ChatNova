@@ -68,7 +68,7 @@ if "chat_history" not in st.session_state:
 def get_gemini_response(question):
     for attempt in range(3): 
         try:
-            response = chat.send_message(question, stream=True)
+            response = chat.send_message(question, stream=False)
             return response
         except google_exceptions.ServiceUnavailable:
             wait = (attempt + 1) * 3
