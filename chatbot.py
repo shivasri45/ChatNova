@@ -14,7 +14,7 @@ model = genai.GenerativeModel(MODEL_NAME)
 chat = model.start_chat(history=[])
 
 
-st.set_page_config(page_title="ChatBot", page_icon="💬", layout="wide")
+st.set_page_config(page_title="ChatNova", page_icon="💬", layout="wide")
 
 
 with st.sidebar:
@@ -59,7 +59,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("💬 Chatbot")
+st.title("💬 ChatNova")
 st.caption("Your personal AI assistant powered by Google Gemini⚡")
 
 if "chat_history" not in st.session_state:
